@@ -1,0 +1,29 @@
+:host {
+    margin: 30px;
+    display: block;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 14px;
+    justify-items: center;
+}
+
+.project-tile {
+    background-color: #fff;
+    box-shadow:  0 0 5px #b1b1b1;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    height: 160px;
+    width: 220px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    h3 {
+        text-align: center;
+    }
+}

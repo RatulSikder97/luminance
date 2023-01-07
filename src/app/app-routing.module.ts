@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'designer'
+    redirectTo: 'designer/studio'
   },
   {
     path: '',
