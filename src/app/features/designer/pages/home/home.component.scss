@@ -5,9 +5,26 @@
 
 .project-list {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(6, 1fr);
     gap: 14px;
     justify-items: center;
+
+    @media (max-width: 1600px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .project-tile {
@@ -22,6 +39,10 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 
     h3 {
         text-align: center;

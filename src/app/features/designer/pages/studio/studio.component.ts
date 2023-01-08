@@ -12,10 +12,10 @@ export class StudioComponent implements AfterViewInit {
   webContext: any;
 
   ngAfterViewInit(): void {
-    this.webContext = this.DrawingCanvas.nativeElement.getContext('webgl');
+    this.webContext = this.DrawingCanvas.nativeElement.getContext('2d');
     
-    this.webContext.clearColor(0, 0 ,0 , 1);
-    this.webContext.clear(this.webContext.COLOR_BUFFER_BIT);
+    this.webContext.fillStyle = "green";
+    this.webContext.fillRect(10, 10, 150, 100);
     
   }  
 
